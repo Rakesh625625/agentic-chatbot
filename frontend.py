@@ -22,8 +22,9 @@ allow_web_search=st.checkbox("Allow Web Search")
 
 user_query=st.text_area("Enter your query: ", height=150, placeholder="Ask Anything!")
 
-API_URL="http://localhost:8000/chat"
+#API_URL="http://localhost:8000/chat"
 
+API_URL="https://agentic-chatbot-backend.onrender.com/chat"
 if st.button("Ask Agent!"):
     if user_query.strip():
         #  2.Connect with backend via URL 

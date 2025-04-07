@@ -17,6 +17,11 @@ app=FastAPI(
     title="Langraph AI Agent"
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI!"}
+
+
 @app.post("/chat")
 def chat_endpoint(request:RequestModel):
     """
